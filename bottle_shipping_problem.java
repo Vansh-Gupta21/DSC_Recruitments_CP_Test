@@ -39,8 +39,5 @@ public class bottle_shipping_problem {
         if (smallCartons > 0) {
             System.out.println(smallCartons + " small");
         }
-//        if (bottles > 0) {
-//            System.out.print("Remaining bottles: " + bottles);
-//        }
     }
 }
