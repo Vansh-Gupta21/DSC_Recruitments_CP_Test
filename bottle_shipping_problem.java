@@ -24,8 +24,7 @@ public class bottle_shipping_problem {
         int mediumCartons = bottles / mediumCap;
         bottles %= mediumCap;
 
-        int smallCartons = bottles / smallCap;
-        bottles %= smallCap;
+        double smallCartons =(Math.ceil((double) bottles/ (double) smallCap));
 
         if (xlCartons > 0) {
             System.out.print(xlCartons + " xl, ");
@@ -37,7 +36,7 @@ public class bottle_shipping_problem {
             System.out.print(mediumCartons + " medium, ");
         }
         if (smallCartons > 0) {
-            System.out.println(smallCartons + " small");
+            System.out.println((int)smallCartons + " small");
         }
     }
 }
